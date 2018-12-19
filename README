@@ -1,8 +1,6 @@
 # Astronomical Diaries Digital
 
-This is the git repository for the data produced in the ADD project.
-
-Currently it contains a very quick-and-dirty proof-of-concept conversion from ATF-JSON to TEI.
+This is the git repository a very quick-and-dirty proof-of-concept conversion from ATF-JSON to TEI.
 
 For developing purposes this is currently a 2-step process (which can be combined into one later on):
 
