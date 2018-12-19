@@ -1,0 +1,10 @@
+# Astronomical Diaries Digital
+
+This is the git repository for the data produced in the ADD project.
+
+Currently it contains a very quick-and-dirty proof-of-concept conversion from ATF-JSON to TEI.
+
+For developing purposes this is currently a 2-step process (which can be combined into one later on):
+
+* *JSON to XML Transformation Scenario*: a XML representation of the JSON is produced using XQuery (`atf-json2tei.xquery`, stored to `101_derived`)
+* *Convert to TEI*: The output of step 1 is transformed to TEI-XML via XSLT (`json-xml2tei.xsl`, stored to `102_derived_tei`)
