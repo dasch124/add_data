@@ -10,11 +10,11 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>101_derived/X301241.xml</String>
+                                    <String>../../Downloads/adsd-adart1-teiCorpus-20181219.xml</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Convert to TEI</String>
+                                        <String>split ORACC export</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -25,26 +25,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>001_src/adsd/adart3/corpusjson/X301241.json</String>
+                                    <String>082_scripts_xsl/split-oracc-export.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Json to XML</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>101_derived/X105670.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Convert to TEI</String>
+                                        <String>split ORACC export</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -55,41 +40,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>001_src/adsd/adart1/corpusjson/</String>
+                                    <String>102_derived_tei/oracc_exports/</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>Json to XML</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XQUERY</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>101_derived/X102731.xml</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Convert to TEI</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>082_scripts_xsl/json-xml2tei.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>Convert to TEI</String>
+                                        <String>split ORACC export</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -108,7 +63,7 @@
                                     <null/>
                                 </field>
                                 <field name="name">
-                                    <String>Convert to TEI</String>
+                                    <String>split ORACC export</String>
                                 </field>
                                 <field name="baseURL">
                                     <String></String>
@@ -126,7 +81,7 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/082_scripts_xsl/json-xml2tei.xsl</String>
+                                    <String>${pdu}/082_scripts_xsl/split-oracc-export.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
                                     <String>${currentFileURL}</String>
@@ -147,10 +102,10 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="outputFile">
-                                    <File>${pdu}/102_derived_tei/${cfn}.xml</File>
+                                    <null/>
                                 </field>
                                 <field name="outputResource">
-                                    <String>${pdu}/102_derived_tei/${cfn}.xml</String>
+                                    <null/>
                                 </field>
                                 <field name="openOtherLocationInBrowser">
                                     <Boolean>false</Boolean>
@@ -165,93 +120,7 @@
                                     <Boolean>false</Boolean>
                                 </field>
                                 <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInSVGPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInResultSetPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="useXSLTInput">
                                     <Boolean>true</Boolean>
-                                </field>
-                                <field name="xsltParams">
-                                    <list/>
-                                </field>
-                                <field name="cascadingStylesheets">
-                                    <String-array/>
-                                </field>
-                                <field name="xslTransformer">
-                                    <String>Saxon-PE</String>
-                                </field>
-                                <field name="extensionURLs">
-                                    <String-array/>
-                                </field>
-                            </scenario>
-                            <scenario>
-                                <field name="advancedOptionsMap">
-                                    <null/>
-                                </field>
-                                <field name="name">
-                                    <String>Json to XML</String>
-                                </field>
-                                <field name="baseURL">
-                                    <String></String>
-                                </field>
-                                <field name="footerURL">
-                                    <String></String>
-                                </field>
-                                <field name="fOPMethod">
-                                    <String>pdf</String>
-                                </field>
-                                <field name="fOProcessorName">
-                                    <String>Apache FOP</String>
-                                </field>
-                                <field name="headerURL">
-                                    <String></String>
-                                </field>
-                                <field name="inputXSLURL">
-                                    <String>${pdu}/082_scripts_xsl/atf-json2tei.xquery</String>
-                                </field>
-                                <field name="inputXMLURL">
-                                    <String>${pdu}/082_scripts_xsl/dummy.xml</String>
-                                </field>
-                                <field name="defaultScenario">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="isFOPPerforming">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="type">
-                                    <String>XQUERY</String>
-                                </field>
-                                <field name="saveAs">
-                                    <Boolean>true</Boolean>
-                                </field>
-                                <field name="openInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <File>${pdu}/101_derived/${cfn}.xml</File>
-                                </field>
-                                <field name="outputResource">
-                                    <String>${pdu}/101_derived/${cfn}.xml</String>
-                                </field>
-                                <field name="openOtherLocationInBrowser">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="locationToOpenInBrowserURL">
-                                    <null/>
-                                </field>
-                                <field name="openInEditor">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInHTMLPane">
-                                    <Boolean>false</Boolean>
-                                </field>
-                                <field name="showInXMLPane">
-                                    <Boolean>false</Boolean>
                                 </field>
                                 <field name="showInSVGPane">
                                     <Boolean>false</Boolean>
@@ -268,7 +137,7 @@
                                             <field name="paramDescription">
                                                 <paramDescriptor>
                                                     <field name="localName">
-                                                        <String>path-to-json</String>
+                                                        <String>project-path</String>
                                                     </field>
                                                     <field name="prefix">
                                                         <null/>
@@ -279,7 +148,7 @@
                                                 </paramDescriptor>
                                             </field>
                                             <field name="value">
-                                                <String>${cf}</String>
+                                                <String>${pdu}</String>
                                             </field>
                                             <field name="hasXPathValue">
                                                 <Boolean>false</Boolean>
@@ -291,7 +160,7 @@
                                     <String-array/>
                                 </field>
                                 <field name="xslTransformer">
-                                    <String>Saxon-PE XQuery</String>
+                                    <String>Saxon-PE</String>
                                 </field>
                                 <field name="extensionURLs">
                                     <String-array/>
